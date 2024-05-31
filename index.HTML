@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collatz Conjecture Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Collatz Conjecture Game</h1>
+        <p>Enter a positive integer and click "Start" to see the Collatz sequence.</p>
+        <div id="inputSection">
+            <input type="number" id="inputNumber" placeholder="Enter a positive integer">
+            <button onclick="startSequence()">Start</button>
+        </div>
+        <div id="sequenceSection" style="display: none;">
+            <button onclick="nextStep()">Next Step</button>
+            <button onclick="restartSequence()">Restart</button>
+            <p id="currentNumber" class="animatedNumber"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
